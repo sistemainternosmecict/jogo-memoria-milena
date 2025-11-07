@@ -20,11 +20,6 @@
 			<div class="min-w-0 flex-1 overflow-hidden">
 				<img src={iconSrc} alt={name} class="card-img h-full rounded-t-2xl object-cover"/>
 			</div>
-			<figcaption
-				class="w-full text-wrap whitespace-wrap content-center rounded-b-xl  p-2 text-xl font-bold"
-			>
-				{name}
-			</figcaption>
 		</figure>
 
 		<!-- Back -->
@@ -55,9 +50,6 @@
 		transform-style: preserve-3d;
 	}
 
-	.card-img{
-		border: solid 2px #8C6239;
-	}
 	.card-container.flipped {
 		transform: rotateY(180deg);
 	}
@@ -70,19 +62,16 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: .5rem;
 		border-radius: .5rem;
 		background-size: cover;
 	}
 
 	.card-side.front {
 		transform: rotateY(0deg);
-		background-color: #DCA65C;
-		border: solid 3px #4B2E05;
 	}
 
 	.card-side.back {
 		transform: rotateY(180deg);
-		background-image: url('/card.svg');
+		background-image: url('/card.png');
 	}
 </style>
